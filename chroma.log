@@ -1,0 +1,920 @@
+[33mWARNING[0m:  [08-10-2024 11:42:53] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-10-2024 11:42:54] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-10-2024 11:42:54] Starting component System
+[36mDEBUG[0m:    [08-10-2024 11:42:54] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-10-2024 11:42:54] Starting component SqliteDB
+[36mDEBUG[0m:    [08-10-2024 11:42:54] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-10-2024 11:42:54] Starting component Posthog
+[36mDEBUG[0m:    [08-10-2024 11:42:54] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-10-2024 11:42:54] Starting component SegmentAPI
+[32mINFO[0m:     [08-10-2024 11:42:54] Started server process [[36m20040[0m]
+[32mINFO[0m:     [08-10-2024 11:42:54] Waiting for application startup.
+[32mINFO[0m:     [08-10-2024 11:42:54] Application startup complete.
+[32mINFO[0m:     [08-10-2024 11:42:54] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-10-2024 11:43:31] ::1:52723 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:43:31] ::1:52723 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:43:31] ::1:52723 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 400
+[32mINFO[0m:     [08-10-2024 11:43:31] ::1:52723 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:48:54] ::1:52753 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:48:54] ::1:52753 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:48:54] ::1:52753 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:48:54] ::1:52753 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:48:54] ::1:52753 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:50:11] ::1:52760 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:50:11] ::1:52760 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:50:11] ::1:52760 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:50:11] ::1:52760 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:50:11] ::1:52760 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:51:36] ::1:52763 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:51:36] ::1:52763 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:51:36] ::1:52763 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:51:36] ::1:52763 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:51:36] ::1:52763 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:55:47] ::1:52773 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:55:48] ::1:52773 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:55:48] ::1:52773 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:55:48] ::1:52773 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:55:48] ::1:52773 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:57:17] Shutting down
+[32mINFO[0m:     [08-10-2024 11:57:17] Waiting for application shutdown.
+[36mDEBUG[0m:    [08-10-2024 11:57:17] Stopping component System
+[36mDEBUG[0m:    [08-10-2024 11:57:17] Stopping component SegmentAPI
+[36mDEBUG[0m:    [08-10-2024 11:57:17] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [08-10-2024 11:57:17] Stopping component Posthog
+[36mDEBUG[0m:    [08-10-2024 11:57:17] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [08-10-2024 11:57:17] Stopping component SqliteDB
+[36mDEBUG[0m:    [08-10-2024 11:57:17] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [08-10-2024 11:57:17] Application shutdown complete.
+[32mINFO[0m:     [08-10-2024 11:57:17] Finished server process [[36m20040[0m]
+[33mWARNING[0m:  [08-10-2024 11:57:21] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-10-2024 11:57:22] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-10-2024 11:57:22] Starting component System
+[36mDEBUG[0m:    [08-10-2024 11:57:22] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-10-2024 11:57:22] Starting component SqliteDB
+[36mDEBUG[0m:    [08-10-2024 11:57:22] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-10-2024 11:57:22] Starting component Posthog
+[36mDEBUG[0m:    [08-10-2024 11:57:22] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-10-2024 11:57:22] Starting component SegmentAPI
+[32mINFO[0m:     [08-10-2024 11:57:22] Started server process [[36m5108[0m]
+[32mINFO[0m:     [08-10-2024 11:57:22] Waiting for application startup.
+[32mINFO[0m:     [08-10-2024 11:57:22] Application startup complete.
+[32mINFO[0m:     [08-10-2024 11:57:22] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-10-2024 11:57:24] ::1:52802 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:57:24] ::1:52802 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:57:24] ::1:52802 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:57:24] ::1:52802 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 11:57:25] ::1:52802 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:01:17] Shutting down
+[32mINFO[0m:     [08-10-2024 12:01:17] Waiting for application shutdown.
+[36mDEBUG[0m:    [08-10-2024 12:01:17] Stopping component System
+[36mDEBUG[0m:    [08-10-2024 12:01:17] Stopping component SegmentAPI
+[36mDEBUG[0m:    [08-10-2024 12:01:17] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [08-10-2024 12:01:17] Stopping component Posthog
+[36mDEBUG[0m:    [08-10-2024 12:01:17] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [08-10-2024 12:01:17] Stopping component SqliteDB
+[36mDEBUG[0m:    [08-10-2024 12:01:17] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [08-10-2024 12:01:17] Application shutdown complete.
+[32mINFO[0m:     [08-10-2024 12:01:17] Finished server process [[36m5108[0m]
+[33mWARNING[0m:  [08-10-2024 12:01:52] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-10-2024 12:01:53] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-10-2024 12:01:53] Starting component System
+[36mDEBUG[0m:    [08-10-2024 12:01:53] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-10-2024 12:01:53] Starting component SqliteDB
+[36mDEBUG[0m:    [08-10-2024 12:01:53] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-10-2024 12:01:53] Starting component Posthog
+[36mDEBUG[0m:    [08-10-2024 12:01:53] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-10-2024 12:01:53] Starting component SegmentAPI
+[32mINFO[0m:     [08-10-2024 12:01:53] Started server process [[36m14888[0m]
+[32mINFO[0m:     [08-10-2024 12:01:53] Waiting for application startup.
+[32mINFO[0m:     [08-10-2024 12:01:53] Application startup complete.
+[32mINFO[0m:     [08-10-2024 12:01:53] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-10-2024 12:02:08] ::1:52822 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:02:08] ::1:52822 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:02:08] ::1:52822 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:02:08] ::1:52822 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:02:08] ::1:52822 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:03:24] ::1:52823 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:03:24] ::1:52823 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:03:24] ::1:52823 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:03:24] ::1:52823 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:03:24] ::1:52823 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:06:29] Shutting down
+[32mINFO[0m:     [08-10-2024 12:06:29] Waiting for application shutdown.
+[36mDEBUG[0m:    [08-10-2024 12:06:29] Stopping component System
+[36mDEBUG[0m:    [08-10-2024 12:06:29] Stopping component SegmentAPI
+[36mDEBUG[0m:    [08-10-2024 12:06:29] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [08-10-2024 12:06:29] Stopping component Posthog
+[36mDEBUG[0m:    [08-10-2024 12:06:29] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [08-10-2024 12:06:29] Stopping component SqliteDB
+[36mDEBUG[0m:    [08-10-2024 12:06:29] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [08-10-2024 12:06:29] Application shutdown complete.
+[32mINFO[0m:     [08-10-2024 12:06:29] Finished server process [[36m14888[0m]
+[33mWARNING[0m:  [08-10-2024 12:06:42] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-10-2024 12:06:43] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-10-2024 12:06:43] Starting component System
+[36mDEBUG[0m:    [08-10-2024 12:06:43] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-10-2024 12:06:43] Starting component SqliteDB
+[36mDEBUG[0m:    [08-10-2024 12:06:43] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-10-2024 12:06:43] Starting component Posthog
+[36mDEBUG[0m:    [08-10-2024 12:06:43] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-10-2024 12:06:43] Starting component SegmentAPI
+[32mINFO[0m:     [08-10-2024 12:06:43] Started server process [[36m8164[0m]
+[32mINFO[0m:     [08-10-2024 12:06:43] Waiting for application startup.
+[32mINFO[0m:     [08-10-2024 12:06:43] Application startup complete.
+[32mINFO[0m:     [08-10-2024 12:06:43] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-10-2024 12:06:50] ::1:52852 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:06:50] ::1:52852 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:06:50] ::1:52852 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 400
+[32mINFO[0m:     [08-10-2024 12:06:50] ::1:52852 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:06:59] ::1:52853 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:06:59] ::1:52853 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:06:59] ::1:52853 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:06:59] ::1:52853 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:07:00] ::1:52853 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [08-10-2024 12:14:50] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-10-2024 12:14:51] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-10-2024 12:14:51] Starting component System
+[36mDEBUG[0m:    [08-10-2024 12:14:51] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-10-2024 12:14:51] Starting component SqliteDB
+[36mDEBUG[0m:    [08-10-2024 12:14:51] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-10-2024 12:14:51] Starting component Posthog
+[36mDEBUG[0m:    [08-10-2024 12:14:51] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-10-2024 12:14:51] Starting component SegmentAPI
+[32mINFO[0m:     [08-10-2024 12:14:51] Started server process [[36m10868[0m]
+[32mINFO[0m:     [08-10-2024 12:14:51] Waiting for application startup.
+[32mINFO[0m:     [08-10-2024 12:14:51] Application startup complete.
+[32mINFO[0m:     [08-10-2024 12:14:51] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-10-2024 12:14:56] ::1:52900 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:14:56] ::1:52900 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 12:14:56] Collection boardgames already exists, returning existing collection.
+[32mINFO[0m:     [08-10-2024 12:14:56] ::1:52900 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 12:14:56] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-10-2024 12:14:56] ::1:52900 - "POST /api/v1/collections/d6026a22-47a6-4469-a21c-283a04cf62b5/query HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:15:03] ::1:52901 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:15:04] ::1:52901 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 12:15:04] Collection boardgames already exists, returning existing collection.
+[32mINFO[0m:     [08-10-2024 12:15:04] ::1:52901 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:15:04] ::1:52901 - "POST /api/v1/collections/d6026a22-47a6-4469-a21c-283a04cf62b5/query HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:15:18] ::1:52902 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:15:18] ::1:52902 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:15:18] ::1:52902 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:15:18] ::1:52902 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:15:18] ::1:52902 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:15:49] ::1:52905 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:15:49] ::1:52905 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[31mERROR[0m:    [08-10-2024 12:15:49] Collection boardgames already exists
+Traceback (most recent call last):
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\anyio\streams\memory.py", line 105, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\anyio\streams\memory.py", line 100, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    return receiver.item
+           ^^^^^^^^^^^^^
+AttributeError: 'MemoryObjectItemReceiver' object has no attribute 'item'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\base.py", line 157, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\anyio\streams\memory.py", line 120, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 98, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\base.py", line 163, in call_next
+    raise app_exc
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\base.py", line 185, in __call__
+    with collapse_excgroups():
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_utils.py", line 83, in collapse_excgroups
+    raise exc
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\base.py", line 187, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 112, in check_http_version_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\base.py", line 163, in call_next
+    raise app_exc
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 62, in wrapped_app
+    raise exc
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 51, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 62, in wrapped_app
+    raise exc
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 51, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 133, in async_wrapper
+    return await f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 640, in create_collection
+    await to_thread.run_sync(
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\anyio\_backends\_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\anyio\_backends\_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\chromadb\server\fastapi\__init__.py", line 629, in process_create_collection
+    return self._api.create_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 146, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\chromadb\api\segment.py", line 176, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py", line 146, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\juan.carlos.barba\AppData\Local\Programs\Python\Python312\Lib\site-packages\chromadb\db\mixins\sysdb.py", line 233, in create_collection
+    raise UniqueConstraintError(f"Collection {name} already exists")
+chromadb.db.base.UniqueConstraintError: Collection boardgames already exists
+[32mINFO[0m:     [08-10-2024 12:15:49] ::1:52905 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [08-10-2024 12:16:10] ::1:52908 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:16:10] ::1:52908 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:16:10] ::1:52908 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:16:10] ::1:52908 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:16:10] ::1:52908 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:17:07] ::1:52912 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:17:07] ::1:52912 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:17:07] ::1:52912 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:17:07] ::1:52912 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:17:07] ::1:52912 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 12:17:29] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-10-2024 12:17:33] ::1:52912 - "POST /api/v1/collections/d5a71964-68cf-495c-8510-54200e8a52d0/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:17:50] ::1:52916 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:17:50] ::1:52916 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:17:50] ::1:52916 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:17:50] ::1:52916 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:17:50] ::1:52916 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 12:18:18] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-10-2024 12:18:22] ::1:52916 - "POST /api/v1/collections/e3c36db4-009f-41ea-95e1-17fc412514dc/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:21:03] ::1:52936 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:21:03] ::1:52936 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:21:03] ::1:52936 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:21:03] ::1:52936 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:21:03] ::1:52936 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:22:06] ::1:52943 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:22:06] ::1:52943 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:22:07] ::1:52943 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:22:07] ::1:52943 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:22:07] ::1:52943 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:23:29] ::1:52948 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:23:29] ::1:52948 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:23:29] ::1:52948 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:23:29] ::1:52948 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:23:29] ::1:52948 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:25:22] ::1:52959 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:25:22] ::1:52959 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:25:22] ::1:52959 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:25:22] ::1:52959 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:25:22] ::1:52959 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:26:28] ::1:52967 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:26:28] ::1:52967 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:26:28] ::1:52967 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:26:28] ::1:52967 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:26:28] ::1:52967 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 12:26:54] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-10-2024 12:26:59] ::1:52967 - "POST /api/v1/collections/7f4dec3d-937c-4f69-905e-0d1205d74293/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:27:07] ::1:52976 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:27:07] ::1:52976 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:27:07] ::1:52976 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:27:08] ::1:52976 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:27:08] ::1:52976 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:28:14] ::1:52981 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:28:14] ::1:52981 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:28:14] ::1:52981 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:28:14] ::1:52981 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:28:14] ::1:52981 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:31:28] ::1:52995 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:31:28] ::1:52995 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:31:28] ::1:52995 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:31:28] ::1:52995 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:31:28] ::1:52995 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:31:37] ::1:52998 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:31:37] ::1:52998 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:31:37] ::1:52998 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:31:37] ::1:52998 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:31:37] ::1:52998 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:32:39] ::1:53004 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:32:39] ::1:53004 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:32:39] ::1:53004 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:32:39] ::1:53004 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:32:39] ::1:53004 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:33:38] ::1:53008 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:33:38] ::1:53008 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:33:38] ::1:53008 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:33:38] ::1:53008 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:33:38] ::1:53008 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:35:27] ::1:53017 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:35:27] ::1:53017 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:35:27] ::1:53017 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:35:27] ::1:53017 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:35:27] ::1:53017 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:35:47] ::1:53020 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:35:47] ::1:53020 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:35:47] ::1:53020 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:35:47] ::1:53020 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:35:47] ::1:53020 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:36:32] ::1:53026 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:36:32] ::1:53026 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:36:32] ::1:53026 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:36:32] ::1:53026 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:36:32] ::1:53026 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:36:44] ::1:53027 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:36:44] ::1:53027 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:36:44] ::1:53027 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:36:44] ::1:53027 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:36:44] ::1:53027 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:37:37] ::1:53034 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:37:37] ::1:53034 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:37:37] ::1:53034 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:37:37] ::1:53034 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:37:37] ::1:53034 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:38:34] ::1:53045 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:38:34] ::1:53045 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:38:34] ::1:53045 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:38:34] ::1:53045 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:38:34] ::1:53045 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 12:38:34] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-10-2024 12:38:35] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:35] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:35] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:35] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:36] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:36] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:36] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:37] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:37] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:37] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:38] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:38] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:38] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:39] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:39] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:39] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:40] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:40] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:40] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:41] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:41] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:41] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:41] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:42] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:42] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:42] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:43] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:43] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:43] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:44] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:44] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:44] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:45] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:45] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:45] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:45] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:46] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:46] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:46] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:47] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:47] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:47] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:48] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:48] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:48] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:48] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:49] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:49] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:49] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:50] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:50] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:50] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:51] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:51] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:51] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:51] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:52] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:52] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:52] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:53] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:53] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:53] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:54] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:54] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:54] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:54] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:55] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:55] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:55] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:56] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:56] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:56] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:57] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:57] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:57] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:57] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:58] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:58] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:58] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:59] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:59] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:59] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:38:59] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:00] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:00] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:00] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:01] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:01] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:01] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:02] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:02] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:02] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:02] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:03] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:03] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:03] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:04] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:04] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:04] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:04] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:05] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:05] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:05] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:06] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:06] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:06] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:07] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:07] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:07] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:07] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:08] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:08] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:08] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:09] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:09] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:09] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:09] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:10] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:10] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:10] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:11] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:11] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:11] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:12] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:12] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:12] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:12] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:13] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:13] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:13] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:14] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:14] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:14] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:14] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:15] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:15] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:15] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:16] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:16] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:16] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:16] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:17] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:17] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:17] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:18] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:18] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:18] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:18] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:19] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:19] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:19] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:20] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:20] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:20] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:21] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:21] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:21] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:21] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:22] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:22] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:22] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:23] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:23] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:23] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:23] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:24] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:24] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:24] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:25] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:25] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:25] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:25] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:26] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:26] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:26] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:27] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:27] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:27] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:27] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:28] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:28] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:28] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:29] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:29] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:29] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:30] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:30] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:30] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:30] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:31] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:31] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:31] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:32] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:32] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:32] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:32] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:33] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:33] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:33] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:34] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:34] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:34] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:35] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:35] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:35] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:36] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:36] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:36] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:37] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:37] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:37] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:38] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:38] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:38] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:39] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:39] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:39] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:40] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:40] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:40] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:40] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:41] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:41] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:41] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:42] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:42] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:42] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:43] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:43] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:43] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:44] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:44] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:44] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:44] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:45] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:45] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:45] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:46] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:46] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:46] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:47] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:47] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:47] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:47] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:48] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:48] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:48] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:49] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:49] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:49] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:49] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:50] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:50] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:50] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:51] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:51] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:51] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:52] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:52] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:52] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:52] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:53] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:53] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:53] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:54] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:54] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:54] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:55] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:55] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:55] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:55] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:56] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:56] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:56] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:57] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:57] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:57] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:58] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:58] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:58] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:58] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:59] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:59] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:39:59] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:00] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:00] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:00] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:01] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:01] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:01] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:01] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:02] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:02] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:02] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:03] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:03] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:03] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:04] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:04] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:04] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:04] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:05] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:05] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:05] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:06] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:06] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:06] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:07] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:07] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:07] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:07] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:08] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:08] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:08] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:09] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:09] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:09] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:09] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:10] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:10] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:10] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:11] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:11] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:11] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:12] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:12] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:12] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:12] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:13] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:13] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:13] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:14] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:14] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:14] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:15] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:15] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:15] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:15] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:16] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:16] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:16] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:17] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:17] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:17] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:18] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:18] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:18] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:18] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:19] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:19] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:19] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:20] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:20] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:20] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:20] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:21] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:21] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:21] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:22] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:22] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:22] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:23] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:23] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:23] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:23] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:24] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:24] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:24] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:25] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:25] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:25] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:26] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:26] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:26] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:26] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:27] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:27] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:27] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:28] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:28] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:28] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:29] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:29] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:29] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:29] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:30] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:30] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:30] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:31] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:31] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:31] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:31] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:32] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:32] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:32] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:33] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:33] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:33] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:34] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:34] Shutting down
+[32mINFO[0m:     [08-10-2024 12:40:34] ::1:53045 - "POST /api/v1/collections/91df7506-41aa-483b-8f99-ded554ece44b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:40:34] Waiting for application shutdown.
+[36mDEBUG[0m:    [08-10-2024 12:40:34] Stopping component System
+[36mDEBUG[0m:    [08-10-2024 12:40:34] Stopping component SegmentAPI
+[36mDEBUG[0m:    [08-10-2024 12:40:34] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [08-10-2024 12:40:34] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [08-10-2024 12:40:34] Stopping component Posthog
+[36mDEBUG[0m:    [08-10-2024 12:40:34] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [08-10-2024 12:40:34] Stopping component SqliteDB
+[36mDEBUG[0m:    [08-10-2024 12:40:34] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [08-10-2024 12:40:34] Application shutdown complete.
+[32mINFO[0m:     [08-10-2024 12:40:34] Finished server process [[36m10868[0m]
+[33mWARNING[0m:  [08-10-2024 12:41:08] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-10-2024 12:41:09] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-10-2024 12:41:09] Starting component System
+[36mDEBUG[0m:    [08-10-2024 12:41:09] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-10-2024 12:41:09] Starting component SqliteDB
+[36mDEBUG[0m:    [08-10-2024 12:41:09] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-10-2024 12:41:09] Starting component Posthog
+[36mDEBUG[0m:    [08-10-2024 12:41:09] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-10-2024 12:41:09] Starting component SegmentAPI
+[32mINFO[0m:     [08-10-2024 12:41:09] Started server process [[36m16784[0m]
+[32mINFO[0m:     [08-10-2024 12:41:09] Waiting for application startup.
+[32mINFO[0m:     [08-10-2024 12:41:09] Application startup complete.
+[32mINFO[0m:     [08-10-2024 12:41:09] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-10-2024 12:41:13] ::1:53058 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:41:13] ::1:53058 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:41:13] ::1:53058 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:41:13] ::1:53058 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:41:13] ::1:53058 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:43:48] ::1:53069 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:43:48] ::1:53069 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:43:48] ::1:53069 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:43:48] ::1:53069 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:43:48] ::1:53069 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:44:04] ::1:53071 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:44:04] ::1:53071 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:44:04] ::1:53071 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:44:04] ::1:53071 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:44:04] ::1:53071 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:44:47] ::1:53082 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:44:47] ::1:53082 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:44:47] ::1:53082 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:44:47] ::1:53082 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:44:47] ::1:53082 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:45:14] ::1:53082 - "POST /api/v1/collections/e56d2401-0612-41c2-8b48-6b2ba183867b/add HTTP/1.1" 422
+[32mINFO[0m:     [08-10-2024 12:46:12] ::1:53087 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:46:12] ::1:53087 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:46:12] ::1:53087 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:46:12] ::1:53087 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:46:12] ::1:53087 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 12:46:34] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-10-2024 12:46:38] ::1:53087 - "POST /api/v1/collections/604fc633-d343-40de-8269-ba4bdd1c5b8b/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:48:46] ::1:53103 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:48:46] ::1:53103 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:48:46] ::1:53103 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:48:46] ::1:53103 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:48:46] ::1:53103 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:49:53] ::1:53110 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:49:53] ::1:53110 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:49:53] ::1:53110 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:49:53] ::1:53110 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:49:53] ::1:53110 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:51:41] ::1:53117 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:51:41] ::1:53117 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:51:41] ::1:53117 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:51:41] ::1:53117 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:51:41] ::1:53117 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:54:09] ::1:53123 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:54:09] ::1:53123 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:54:09] ::1:53123 - "GET /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:54:09] ::1:53123 - "DELETE /api/v1/collections/boardgames?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:54:09] ::1:53123 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 12:54:12] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-10-2024 12:54:12] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:13] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:16] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:17] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:19] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:20] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:22] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:23] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:25] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:27] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:28] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:30] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:32] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:33] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:35] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:36] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:38] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:40] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:41] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:43] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:45] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:46] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:48] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:50] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:52] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:53] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:55] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:57] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:58] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:54:59] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:55:02] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:55:03] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:55:05] ::1:53123 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/add HTTP/1.1" 201
+[32mINFO[0m:     [08-10-2024 12:55:11] ::1:53127 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:55:11] ::1:53127 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 12:55:11] Collection boardgames already exists, returning existing collection.
+[32mINFO[0m:     [08-10-2024 12:55:11] ::1:53127 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:55:11] ::1:53127 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/query HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:56:19] ::1:53132 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:56:19] ::1:53132 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 12:56:19] Collection boardgames already exists, returning existing collection.
+[32mINFO[0m:     [08-10-2024 12:56:19] ::1:53132 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:56:20] ::1:53132 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/query HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:57:08] ::1:53142 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:57:08] ::1:53142 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 12:57:08] Collection boardgames already exists, returning existing collection.
+[32mINFO[0m:     [08-10-2024 12:57:08] ::1:53142 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:57:09] ::1:53142 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/query HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:57:49] ::1:53145 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:57:49] ::1:53145 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 12:57:49] Collection boardgames already exists, returning existing collection.
+[32mINFO[0m:     [08-10-2024 12:57:49] ::1:53145 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 12:57:50] ::1:53145 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/query HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 14:59:51] ::1:53761 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 14:59:51] ::1:53761 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 14:59:51] Collection boardgames already exists, returning existing collection.
+[32mINFO[0m:     [08-10-2024 14:59:51] ::1:53761 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 14:59:53] ::1:53761 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/query HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 15:01:43] Collection boardgames already exists, returning existing collection.
+[32mINFO[0m:     [08-10-2024 15:01:43] ::1:53770 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 15:01:44] ::1:53770 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/query HTTP/1.1" 200
+[36mDEBUG[0m:    [08-10-2024 15:09:56] Collection boardgames already exists, returning existing collection.
+[32mINFO[0m:     [08-10-2024 15:09:56] ::1:53884 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-10-2024 15:09:57] ::1:53884 - "POST /api/v1/collections/91a4d4b5-8d31-43fc-8ef5-a4385791837f/query HTTP/1.1" 200
